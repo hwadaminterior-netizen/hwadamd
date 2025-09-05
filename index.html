@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWADAM DESIGN - 화담디자인</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">HWADAMDESIGN</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cv" class="nav-link">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" data-index="0">
+                <div class="hero-bg" style="background-image: url('IMAGE/main1.jpg')"></div>
+            </div>
+            <div class="hero-slide" data-index="1">
+                <div class="hero-bg" style="background-image: url('IMAGE/main2.jpg')"></div>
+            </div>
+            <div class="hero-slide" data-index="2">
+                <div class="hero-bg" style="background-image: url('IMAGE/main3.jpg')"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-subtitle">
+                <div class="hero-description">
+                    <div class="typing-text" id="typingText"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <div class="experience-content">
+                <h2>300+ 다년간의 경험</h2>
+                <p>주거공간부터 상업공간까지<br>
+                다양한 프로젝트를 통해<br>
+                축적된 노하우를 바탕으로<br>
+                최적의 공간을 제안합니다.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="project-slider">
+                <h2 class="section-title">PROJECTS</h2>
+                <div class="slider-container">
+                    <div class="slide active" data-index="0">
+                        <div class="slide-title">
+                            <h3>주거공간</h3>
+                            <p>200+ 시공경력</p>
+                        </div>
+                        <img src="IMAGE/living.jpg" alt="주거공간">
+                    </div>
+                    <div class="slide" data-index="1">
+                        <div class="slide-title">
+                            <h3>상업공간</h3>
+                            <p>150+ 시공경력</p>
+                        </div>
+                        <img src="IMAGE/commer.jpg" alt="상업공간">
+                    </div>
+                    <div class="slide" data-index="2">
+                        <div class="slide-title">
+                            <h3>오피스</h3>
+                            <p>50+ 시공경력</p>
+                        </div>  
+                        <img src="IMAGE/office.jpg" alt="사무실">
+                    </div>
+                    <div class="slide" data-index="3">
+                        <div class="slide-title">
+                            <h3>건축인테리어</h3>
+                            <p>시공</p>
+                        </div>
+                        <img src="IMAGE/arch.jpg" alt="건축 인테리어">
+                    </div>
+                    <button class="slider-btn prev-btn" aria-label="이전 슬라이드">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" aria-label="다음 슬라이드">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">1</div>
+                    <h3>믿을만한 업체가 없다구요?</h3>
+                    <p>상담 퀄리티 차이를 느껴보세요</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">2</div>
+                    <h3>공사 중 추가금액 요구?</h3>
+                    <p>계약서 외 금액은 청구하지 않아요</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">3</div>
+                    <h3>실측, 도면, 3D이미지?</h3>
+                    <p>기본으로 제공됩니다</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="IMAGE/liv.JPG" alt="주거공간">
+                    <h3>주거공간</h3>
+                </div>
+                <div class="service-item">
+                    <img src="IMAGE/comm.jpg" alt="상업공간">
+                    <h3>상업공간</h3>
+                </div>
+                <div class="service-item">
+                    <img src="IMAGE/offi.jpg" alt="오피스">
+                    <h3>오피스</h3>
+                </div>
+                <div class="service-item">
+                    <img src="IMAGE/arc.jpg" alt="건축인테리어">
+                    <h3>건축인테리어</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CV Section -->
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2 class="section-title">CV</h2>
+            <div class="cv-content">
+                <div class="cv-grid">
+                    <div class="cv-section">
+                        <h3>WORK EXPERIENCE</h3>
+                        <ul class="cv-list">
+                            <li>• 화담 2015.05-현재</li>
+                            <li>• 건축 2023.03-현재</li>
+                            <li>분당 서현동 - 아차산로 38 개풍빌딩 2층 (현재)</li>
+                            <li>• CO WORK</li>
+                            <li>직영 가구 공장</li>
+                            <li>용인시 모현면 매산리 328-7</li>
+                        </ul>
+                    </div>
+                    <div class="cv-map">
+                        <h3>사무실 위치</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.1234567890!2d127.1234567!3d37.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca49998cbf309:0xb511020a1d27d85f!2z7Iug7Jq47Yq567OE7IucIOyEseuCqOq1rOyCrOq4uCDslYzslYzsi5zroZwgMzjslYQ!5e0!3m2!1sko!2skr!4v1234567890123!5m2!1sko!2skr" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-grid">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="name">이름 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처 *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="area">평수 *</label>
+                            <select id="area" name="area" required>
+                                <option value="">평수를 선택해주세요</option>
+                                <option value="10평대">10평대</option>
+                                <option value="20평대">20평대</option>
+                                <option value="30평대">30평대</option>
+                                <option value="40평대">40평대</option>
+                                <option value="50평대">50평대</option>
+                                <option value="60평이상">60평이상</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="purpose">용도 *</label>
+                            <select id="purpose" name="purpose" required>
+                                <option value="">용도를 선택해주세요</option>
+                                <option value="주거공간">주거공간</option>
+                                <option value="상업공간">상업공간</option>
+                                <option value="사무실">사무실</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">예산 *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">예산을 선택해주세요</option>
+                                <option value="1000만원대">1000만원대</option>
+                                <option value="2000만원대">2000만원대</option>
+                                <option value="3000만원대">3000만원대</option>
+                                <option value="4000만원대">4000만원대</option>
+                                <option value="5000만원대">5000만원대</option>
+                                <option value="6000만원대이상">6000만원대이상</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">시공지 주소 *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="memo">기타 요청사항</label>
+                    <textarea id="memo" name="memo" rows="5" placeholder="추가 요청사항이 있으시면 입력해주세요"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">CONTACT</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 HWADAM DESIGN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
