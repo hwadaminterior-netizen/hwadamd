@@ -81,7 +81,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: clamp(300px, 60vw, 600px);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,35 +119,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    transition: all 0.3s ease;
-}
-
-/* 모바일에서 배경 이미지 좌우 잘림 방지 */
-@media (max-width: 768px) {
-    .hero-bg {
-        background-size: 100% 100%;
-        background-position: center center;
-        background-attachment: scroll;
-        background-color: #000;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-bg {
-        background-size: 100% 100%;
-        background-position: center center;
-        background-attachment: scroll;
-        background-color: #000;
-    }
-}
-
-/* 세로 화면에서 추가 최적화 */
-@media (max-width: 480px) and (orientation: portrait) {
-    .hero-bg {
-        background-size: 100% 100%;
-        background-position: center center;
-    }
 }
 
 
@@ -165,18 +136,17 @@ body {
 
 
 .hero-content {
-    max-width: clamp(300px, 80vw, 800px);
-    padding: 0 clamp(10px, 3vw, 20px);
+    max-width: 800px;
+    padding: 0 20px;
     position: relative;
     z-index: 2;
-    width: 100%;
 }
 
 .hero-title {
-    font-size: clamp(1.2rem, 6vw, 3rem);
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    letter-spacing: clamp(0.5px, 0.3vw, 3px);
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
     line-height: 1.2;
 }
 
@@ -185,9 +155,9 @@ body {
 }
 
 .hero-subtitle {
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    font-size: 1.5rem;
     font-weight: 300;
-    letter-spacing: clamp(0.3px, 0.2vw, 1.5px);
+    letter-spacing: 2px;
 }
 
 .hero-subtitle p {
@@ -199,16 +169,14 @@ body {
 }
 
 .typing-text {
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: white;
     font-weight: bold;
-    min-height: clamp(80px, 20vh, 150px);
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(8px, 2vw, 15px);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .typing-text div {
@@ -601,8 +569,17 @@ section {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .hero {
-        height: clamp(250px, 50vw, 550px);
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .typing-text {
+        font-size: 1.05rem;
+        min-height: 180px;
     }
 }
 
@@ -628,9 +605,17 @@ section {
         left: 0;
     }
 
-    .hero {
-        height: clamp(200px, 45vw, 500px);
-        padding: clamp(20px, 5vw, 80px) 0;
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .typing-text {
+        font-size: 1rem;
+        min-height: 150px;
     }
 
 
@@ -698,9 +683,17 @@ section {
 }
 
 @media (max-width: 480px) {
-    .hero {
-        height: clamp(180px, 40vw, 400px);
-        padding: clamp(15px, 4vw, 60px) 0;
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .typing-text {
+        font-size: 0.9rem;
+        min-height: 120px;
     }
 
     .section-title {
