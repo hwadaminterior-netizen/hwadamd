@@ -121,6 +121,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transition: all 0.3s ease;
 }
 
 .hero-bg::before {
@@ -643,6 +644,7 @@ section {
     .hero-bg {
         background-attachment: scroll;
         background-position: center center;
+        background-size: cover;
     }
 
     .hero-bg::before {
