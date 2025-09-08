@@ -82,7 +82,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    min-height: clamp(300px, 50vw, 600px);
+    min-height: clamp(200px, 40vw, 500px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,10 +174,10 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(1.8rem, 8vw, 4rem);
+    font-size: clamp(1.2rem, 6vw, 3rem);
     font-weight: 700;
-    margin-bottom: 2rem;
-    letter-spacing: clamp(1px, 0.5vw, 4px);
+    margin-bottom: 1.5rem;
+    letter-spacing: clamp(0.5px, 0.3vw, 3px);
     line-height: 1.2;
 }
 
@@ -186,9 +186,9 @@ body {
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     font-weight: 300;
-    letter-spacing: clamp(0.5px, 0.3vw, 2px);
+    letter-spacing: clamp(0.3px, 0.2vw, 1.5px);
 }
 
 .hero-subtitle p {
@@ -200,15 +200,15 @@ body {
 }
 
 .typing-text {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-    line-height: 1.6;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    line-height: 1.5;
     color: white;
     font-weight: bold;
-    min-height: clamp(120px, 25vh, 200px);
+    min-height: clamp(80px, 20vh, 150px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(10px, 3vw, 20px);
+    padding: clamp(8px, 2vw, 15px);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -603,7 +603,7 @@ section {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
-        min-height: clamp(250px, 45vw, 550px);
+        min-height: clamp(180px, 35vw, 450px);
     }
 }
 
@@ -630,8 +630,8 @@ section {
     }
 
     .hero {
-        min-height: clamp(200px, 40vw, 500px);
-        padding: clamp(20px, 5vw, 80px) 0;
+        min-height: clamp(150px, 30vw, 400px);
+        padding: clamp(15px, 3vw, 60px) 0;
     }
 
 
@@ -700,8 +700,8 @@ section {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: clamp(150px, 35vw, 400px);
-        padding: clamp(15px, 4vw, 60px) 0;
+        min-height: clamp(120px, 25vw, 300px);
+        padding: clamp(10px, 2vw, 40px) 0;
     }
 
     .section-title {
