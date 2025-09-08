@@ -122,6 +122,23 @@ body {
     background-attachment: fixed;
 }
 
+/* 모바일에서 배경 이미지 반응형 */
+@media (max-width: 768px) {
+    .hero-bg {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-bg {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+}
+
 
 
 .hero-bg::before {
