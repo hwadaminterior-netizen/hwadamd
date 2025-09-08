@@ -129,7 +129,7 @@ body {
     }
     
     .hero-bg {
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center center;
         background-attachment: scroll;
     }
@@ -141,7 +141,7 @@ body {
     }
     
     .hero-bg {
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center center;
         background-attachment: scroll;
     }
