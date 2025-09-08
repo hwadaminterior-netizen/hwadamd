@@ -178,13 +178,15 @@ body {
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 1.25rem !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 0.9rem !important;
+        font-size: 0.8rem !important;
+        font-weight: 700 !important;
     }
 }
 
@@ -200,13 +202,15 @@ body {
 
 @media (max-width: 768px) {
     .hero-subtitle {
-        font-size: 0.6rem !important;
+        font-size: 0.5rem !important;
+        font-weight: 300 !important;
     }
 }
 
 @media (max-width: 480px) {
     .hero-subtitle {
-        font-size: 0.5rem !important;
+        font-size: 0.4rem !important;
+        font-weight: 300 !important;
     }
 }
 
@@ -231,15 +235,17 @@ body {
 
 @media (max-width: 768px) {
     .typing-text {
-        font-size: 0.5rem !important;
-        min-height: 75px !important;
+        font-size: 0.4rem !important;
+        min-height: 50px !important;
+        line-height: 1.2 !important;
     }
 }
 
 @media (max-width: 480px) {
     .typing-text {
-        font-size: 0.45rem !important;
-        min-height: 60px !important;
+        font-size: 0.35rem !important;
+        min-height: 40px !important;
+        line-height: 1.2 !important;
     }
 }
 
