@@ -632,16 +632,16 @@ section {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 1.25rem;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 0.6rem;
     }
 
     .typing-text {
-        font-size: 1rem;
-        min-height: 150px;
+        font-size: 0.5rem;
+        min-height: 75px;
     }
 
 
@@ -707,16 +707,16 @@ section {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 0.9rem;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
     .typing-text {
-        font-size: 0.9rem;
-        min-height: 120px;
+        font-size: 0.45rem;
+        min-height: 60px;
     }
 
     .section-title {
