@@ -176,6 +176,18 @@ body {
     line-height: 1.2;
 }
 
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 0.9rem !important;
+    }
+}
+
 .title-line {
     display: block;
 }
@@ -184,6 +196,18 @@ body {
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-subtitle {
+        font-size: 0.5rem !important;
+    }
 }
 
 .hero-subtitle p {
@@ -203,6 +227,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 0.5rem !important;
+        min-height: 75px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .typing-text {
+        font-size: 0.45rem !important;
+        min-height: 60px !important;
+    }
 }
 
 .typing-text div {
