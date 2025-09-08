@@ -81,8 +81,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    min-height: clamp(200px, 40vw, 500px);
+    height: clamp(300px, 60vw, 600px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -603,7 +602,7 @@ section {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
-        min-height: clamp(180px, 35vw, 450px);
+        height: clamp(250px, 50vw, 550px);
     }
 }
 
@@ -630,8 +629,8 @@ section {
     }
 
     .hero {
-        min-height: clamp(150px, 30vw, 400px);
-        padding: clamp(15px, 3vw, 60px) 0;
+        height: clamp(200px, 45vw, 500px);
+        padding: clamp(20px, 5vw, 80px) 0;
     }
 
 
@@ -700,8 +699,8 @@ section {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: clamp(120px, 25vw, 300px);
-        padding: clamp(10px, 2vw, 40px) 0;
+        height: clamp(180px, 40vw, 400px);
+        padding: clamp(15px, 4vw, 60px) 0;
     }
 
     .section-title {
