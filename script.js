@@ -369,7 +369,7 @@ const typingAnimation = {
         
         // 화면에 표시
         element.innerHTML = this.completedLines.map(line => 
-            line ? `<div>${line}</div>` : ''
+            line ? `<div style="font-size: inherit;">${line}</div>` : ''
         ).join('');
         
         let speed = this.currentCharIndex === currentText.length ? this.pauseTime : this.typingSpeed;
