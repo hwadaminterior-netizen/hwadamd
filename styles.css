@@ -124,6 +124,39 @@ body {
     transition: all 0.3s ease;
 }
 
+/* 배경 이미지 반응형 개선 */
+@media (max-width: 1024px) {
+    .hero-bg {
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-bg {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-bg {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+}
+
+/* 매우 작은 화면에서 배경 이미지 최적화 */
+@media (max-width: 360px) {
+    .hero-bg {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+}
+
 .hero-bg::before {
     content: '';
     position: absolute;
@@ -137,18 +170,18 @@ body {
 
 
 .hero-content {
-    max-width: 800px;
-    padding: 0 20px;
+    max-width: clamp(300px, 80vw, 800px);
+    padding: 0 clamp(10px, 3vw, 20px);
     position: relative;
     z-index: 2;
     width: 100%;
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 8vw, 4rem);
     font-weight: 700;
     margin-bottom: 2rem;
-    letter-spacing: 4px;
+    letter-spacing: clamp(1px, 0.5vw, 4px);
     line-height: 1.2;
 }
 
@@ -157,9 +190,9 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: clamp(0.5px, 0.3vw, 2px);
 }
 
 .hero-subtitle p {
@@ -171,15 +204,15 @@ body {
 }
 
 .typing-text {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     line-height: 1.6;
     color: white;
     font-weight: bold;
-    min-height: 200px;
+    min-height: clamp(120px, 25vh, 200px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: clamp(10px, 3vw, 20px);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -576,20 +609,6 @@ section {
     .hero {
         min-height: 550px;
     }
-
-    .hero-title {
-        font-size: 3rem;
-        letter-spacing: 3px;
-    }
-
-    .hero-subtitle {
-        font-size: 1.3rem;
-    }
-
-    .typing-text {
-        font-size: 1.05rem;
-        min-height: 180px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -619,33 +638,6 @@ section {
         padding: 80px 0;
     }
 
-    .hero-content {
-        padding: 0 15px;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-    }
-
-    .typing-text {
-        font-size: 1rem;
-        min-height: 150px;
-        padding: 15px;
-        line-height: 1.5;
-    }
-
-    .hero-bg {
-        background-attachment: scroll;
-        background-position: center center;
-        background-size: cover;
-    }
 
     .hero-bg::before {
         background: rgba(0, 0, 0, 0.5);
@@ -714,29 +706,6 @@ section {
     .hero {
         min-height: 400px;
         padding: 60px 0;
-    }
-
-    .hero-content {
-        padding: 0 10px;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-        letter-spacing: 1px;
-        margin-bottom: 1rem;
-        line-height: 1.3;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-        letter-spacing: 0.5px;
-    }
-
-    .typing-text {
-        font-size: 0.9rem;
-        min-height: 120px;
-        padding: 10px;
-        line-height: 1.4;
     }
 
     .section-title {
