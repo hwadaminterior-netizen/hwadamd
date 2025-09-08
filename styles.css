@@ -82,7 +82,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    min-height: clamp(400px, 70vh, 600px);
+    min-height: clamp(300px, 50vw, 600px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -595,7 +595,7 @@ section {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
-        min-height: clamp(350px, 60vh, 550px);
+        min-height: clamp(250px, 45vw, 550px);
     }
 }
 
@@ -622,8 +622,8 @@ section {
     }
 
     .hero {
-        min-height: clamp(300px, 50vh, 500px);
-        padding: clamp(40px, 8vh, 80px) 0;
+        min-height: clamp(200px, 40vw, 500px);
+        padding: clamp(20px, 5vw, 80px) 0;
     }
 
 
@@ -692,8 +692,8 @@ section {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: clamp(250px, 40vh, 400px);
-        padding: clamp(30px, 6vh, 60px) 0;
+        min-height: clamp(150px, 35vw, 400px);
+        padding: clamp(15px, 4vw, 60px) 0;
     }
 
     .section-title {
