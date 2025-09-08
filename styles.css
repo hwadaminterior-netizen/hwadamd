@@ -122,10 +122,10 @@ body {
     background-attachment: fixed;
 }
 
-/* 모바일에서 배경 이미지 반응형 */
+/* 모바일에서 배경 이미지 가득 채우기 */
 @media (max-width: 768px) {
     .hero-bg {
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center center;
         background-attachment: scroll;
     }
@@ -133,7 +133,7 @@ body {
 
 @media (max-width: 480px) {
     .hero-bg {
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center center;
         background-attachment: scroll;
     }
