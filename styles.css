@@ -127,7 +127,7 @@ body {
 /* 모바일에서 배경 이미지 좌우 잘림 방지 */
 @media (max-width: 768px) {
     .hero-bg {
-        background-size: contain;
+        background-size: 100% auto;
         background-position: center center;
         background-attachment: scroll;
         background-color: #000;
@@ -136,10 +136,18 @@ body {
 
 @media (max-width: 480px) {
     .hero-bg {
-        background-size: contain;
+        background-size: 100% auto;
         background-position: center center;
         background-attachment: scroll;
         background-color: #000;
+    }
+}
+
+/* 세로 화면에서 추가 최적화 */
+@media (max-width: 480px) and (orientation: portrait) {
+    .hero-bg {
+        background-size: 100% auto;
+        background-position: center center;
     }
 }
 
