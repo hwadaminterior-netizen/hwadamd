@@ -385,22 +385,6 @@ document.addEventListener('DOMContentLoaded', () => {
     typingAnimation.init();
 });
 
-// Add loading animation
-window.addEventListener('load', () => {
-    const loading = document.createElement('div');
-    loading.className = 'loading';
-    loading.innerHTML = '<div style="font-size: 2rem; color: #333;">HWADAM DESIGN</div>';
-    document.body.appendChild(loading);
-    
-    setTimeout(() => {
-        loading.classList.add('hidden');
-        setTimeout(() => {
-            if (loading.parentNode) {
-                loading.parentNode.removeChild(loading);
-            }
-        }, 500);
-    }, 1000);
-});
 
 // Typing effect for hero title
 function typeWriter(element, text, speed = 100) {
